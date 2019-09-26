@@ -190,7 +190,8 @@ public class RestClientConfiguration {
     }
 
     public Boolean getLogHttp() {
-        return logHttp;
+    	return false;
+       //return logHttp;
     }
 
     public String getJasperReportsServerUrl() {
@@ -237,7 +238,8 @@ public class RestClientConfiguration {
     }
 
     public Boolean getLogHttpEntity() {
-        return logHttpEntity;
+    	return false;
+        //return logHttpEntity;
     }
 
     public RestClientConfiguration setLogHttpEntity(Boolean logHttpEntity) {

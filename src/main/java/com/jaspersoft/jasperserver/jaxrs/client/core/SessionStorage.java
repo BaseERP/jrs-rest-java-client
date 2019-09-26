@@ -39,7 +39,7 @@ import org.codehaus.jackson.map.DeserializationConfig;
 import org.glassfish.jersey.client.ClientProperties;
 import org.glassfish.jersey.filter.LoggingFilter;
 import org.glassfish.jersey.jackson.JacksonFeature;
-import org.slf4j.bridge.SLF4JBridgeHandler;
+//import org.slf4j.bridge.SLF4JBridgeHandler;
 
 
 public class SessionStorage {
@@ -154,8 +154,8 @@ public class SessionStorage {
 
     private LoggingFilter initLoggingFilter() {
         Logger logger = Logger.getLogger(this.getClass().getName());
-        SLF4JBridgeHandler.removeHandlersForRootLogger();
-        SLF4JBridgeHandler.install();
+       // SLF4JBridgeHandler.removeHandlersForRootLogger();
+       // SLF4JBridgeHandler.install();
 
         return new LoggingFilter(logger,
                 configuration.getLogHttpEntity());
